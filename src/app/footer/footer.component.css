@@ -1,0 +1,7 @@
+:host {
+  border-top: 1px solid grey;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(67, 60, 60);
+  color: white;
+}

@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Plus:wght@700&family=Roboto+Slab:wght@300&display=swap");
+
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+h1 {
+  color: black;
+  margin-left: 50px;
+  font-family: "Gentium Plus", serif;
+  font-family: "Roboto Slab", serif;
+  cursor: pointer;
+}
+#home-button{
+  margin-right: 25px;
+}
+#input-search {
+  border: none;
+}
+.header-buttons{
+ margin: auto;
+}

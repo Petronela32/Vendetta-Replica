@@ -1,14 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Gentium+Plus:wght@700&family=Roboto+Slab:wght@300&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Gentium+Plus:wght@700&family=Roboto+Slab:wght@300&display=swap"); */
 
+#rezervari {
+  background-color: black;
+  color: orange;
+  text-align: center;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 600;
+}
 :host {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-}
-.products {
-  font-family: "Gentium Plus", serif;
-  font-family: "Roboto Slab", serif;
-  display: flex;
-  align-items: center;
 }

@@ -1,7 +1,90 @@
-<div class="slide-images" style="max-width: 1700px">
-  <img src="../../assets/pictures/13.jpg" class="mySlides" alt="img13" style="width: 100%" />
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="../../assets/pictures/13.jpg" alt="img13" style="width: 100%" />
+  </div>
 
-  <img src="../../assets/pictures/19.jpg" class="mySlides" alt="img19" style="width: 100%" />
+  <div class="mySlides fade">
+    <img src="../../assets/pictures/19.jpg" alt="img19" style="width: 100%" />
+  </div>
 
-  <img src="../../assets/pictures/26.jpg" class="mySlides" alt="img26" style="width: 100%" />
+  <div class="mySlides fade">
+    <img src="../../assets/pictures/20.jpg" alt="img20" style="width: 100%" />
+  </div>
+
+  <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
+  <a class="next" (click)="plusSlides(1)">&#10095;</a>
+</div>
+
+<div style="text-align: center">
+  <span class="dot" (click)="currentSlide(1)"></span>
+  <span class="dot" (click)="currentSlide(2)"></span>
+  <span class="dot" (click)="currentSlide(3)"></span>
+</div>
+
+<div class="img-logo-argan">
+  <img src="../../assets/pictures/Logo-Nashi-Argan.jpg" alt="" />
+</div>
+
+<div class="products">
+  <img src="../../assets/pictures/Argan.jpg" alt="Argan" [width]="250" />
+  <img
+    src="../../assets/pictures/FillerTherapy.jpg"
+    alt="FillerTherapy"
+    [width]="200"
+  />
+  <img src="../../assets/pictures/Capixyl.jpg" alt="Capixyl" [width]="200" />
+  <img src="../../assets/pictures/Style.jpg" alt="Style" [width]="200" />
+</div>
+
+<div id="products">
+  <img
+    src="../../assets/pictures/Argan-Man.jpg"
+    alt="Argan-Man"
+    [width]="200"
+  />
+  <img
+    src="../../assets/pictures/Argan-Sun.jpg"
+    alt="Argan-Sun"
+    [width]="200"
+  />
+  <img
+    src="../../assets/pictures/Blondy-Joy.jpg"
+    alt="Blondy-Joy"
+    [width]="200"
+  />
+  <img
+    src="../../assets/pictures/nashi_body_thumb.jpg"
+    alt="nashi_body_thumb"
+    [width]="200"
+  />
+</div>
+
+<div class="titles">
+  <h2>BRANDURI DIN SALONUL NOSTRU</h2>
+  <h3>ALEGI CE ITI PLACE</h3>
+</div>
+
+<div class="brands">
+  <img
+    src="../../assets/pictures/Alfaparf.jpg"
+    alt="Alfaparf Milano"
+    [width]="120"
+  />
+  <img
+    src="../../assets/pictures/JoicoSmall.jpg"
+    alt="JoicoSmall"
+    [width]="120"
+  />
+  <img
+    src="../../assets/pictures/Kerastase.jpg"
+    alt="Kerastase"
+    [width]="120"
+  />
+  <img src="../../assets/pictures/Loreal.jpg" alt="Loreal" [width]="120" />
+  <img
+    src="../../assets/pictures/MOROCCANOIL.jpg"
+    alt="MOROCCANOIL"
+    [width]="120"
+  />
+  <img src="../../assets/pictures/REUZEL.jpg" alt="REUZEL" [width]="120" />
 </div>

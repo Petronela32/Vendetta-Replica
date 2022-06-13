@@ -15,9 +15,6 @@ import { SearchComponent } from './search/search.component';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { SlickCarouselModule } from 'ngx-slick-carousel';  
-
-
 
 @NgModule({
   declarations: [
@@ -38,7 +35,6 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     BrowserAnimationsModule,
     MatInputModule,
     FormsModule,
-    SlickCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent],

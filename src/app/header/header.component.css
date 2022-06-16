@@ -2,22 +2,20 @@
 
 :host {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  gap: 250px;
   background-color: white;
-  position: sticky;
+  position: -webkit-sticky;
+  position: fixed;
+  z-index: 1;
+  margin-left: 50px;
 }
 
 #home-button {
   margin-right: 25px;
 }
-/* #input-search {
-  border: none;
-} */
 .header-buttons {
   margin: auto;
 }
 img {
-  margin: auto;
-  margin-top: 20px;
+  cursor: pointer;
 }

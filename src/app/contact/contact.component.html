@@ -2,42 +2,52 @@
   <div>
     <h4>Make an appointment here :</h4>
     <form>
+      <div id="service">
+        <label for="selectService">Service: </label>
+        <select  class="input" [(ngModel)]="userData.service" name="Select" id="service">
+          <option value="spalat">Spalat</option>
+          <option value="tuns-femei">Tuns Femei</option>
+          <option value="tuns-barbati">Tuns Barbati</option>
+          <option value="aranjat-par">Aranjat Par</option>
+          <option value="aranjat-par">Aranjat Barba</option>
+          <option value="coafat-extravagant">Coafat Extravangat</option>
+         
+        </select>
+      </div>
+
+      <div id="date">
+        <label for="date">Select Date:</label>
+        <input class="input"
+          [(ngModel)]="userData.date"
+          type="datetime-local"
+          name="date"
+          id="date"
+        />
+      </div>
+
       <div>
         <label for="fName"> First Name:</label>
-        <input
+        <input class="input"
           [(ngModel)]="userData.firstName"
           type="text"
           name="fName"
           id="fName"
+          placeholder="First Name"
         />
       </div>
 
       <div>
         <label for="lName"> Last Name:</label>
-        <input
+        <input class="input"
           [(ngModel)]="userData.lastName"
           type="text"
           name="lName"
           id="lName"
+          placeholder="Last Name"
         />
       </div>
 
-      <div id="service">
-        <label for="selectService">Service: </label>
-        <input
-          [(ngModel)]="userData.service"
-          type="text"
-          name="service"
-          id="service"
-        />
-      </div>
-
-      <div id="date">
-        <label for="date">Select Date:</label>
-        <input [(ngModel)]="userData.date" type="text" name="date" id="date" />
-      </div>
-
-      <div id="hour">
+      <!-- <div id="hour">
         <label for="hour">Select Hour:</label>
         <input
           [(ngModel)]="userData.hour"
@@ -45,11 +55,11 @@
           name="hour"
           id="selecthour"
         />
-      </div>
+      </div> -->
 
       <div id="phone">
         <label for="phone"> Phone Nr: </label>
-        <input
+        <input class="input"
           [(ngModel)]="userData.phone"
           type="text"
           name="phone"

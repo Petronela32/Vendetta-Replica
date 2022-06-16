@@ -16,6 +16,6 @@ export class AboutUsComponent implements OnInit {
   ngOnInit(): void {}
 
   btnClick(): void {
-    this.click.emit('TEST');
+    this.click.emit();
   }
 }

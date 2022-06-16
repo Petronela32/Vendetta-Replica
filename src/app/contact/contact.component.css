@@ -1,10 +1,10 @@
 #container {
   border-top: solid 1px black;
   text-align: center;
-  background: aquamarine;
 }
 #date {
-  margin-left: -1px;
+  padding: 0;
+  margin-left: 6px;
 }
 #phone {
   margin-left: 4px;
@@ -13,8 +13,13 @@
   margin-left: -3px;
 }
 #service {
-  margin-right: -11px;
+ margin-right: 5px;
 }
 .button-app {
   margin-left: 30px;
+}
+.input{
+  font-size: 1rem;
+  padding: 3px 5px;
+  margin-bottom: 5px;
 }

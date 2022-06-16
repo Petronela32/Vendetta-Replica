@@ -24,7 +24,8 @@
 .next {
   right: 0;
 }
-.prev, .next {
+.prev,
+.next {
   background-color: rgba(0, 0, 0, 0.8);
 }
 .dot {
@@ -66,17 +67,17 @@ img {
 } */
 .img-logo-argan {
   display: block;
- margin-top: 50px;
- margin-left: auto;
- margin-right: auto;
- width: 40%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
 .titles {
   text-align: center;
 }
-.products{
-   padding: 80px;
-   margin-left: 100px;
+.products {
+  padding: 80px;
+  margin-left: 100px;
 }
 #products {
   padding: 50px;
@@ -86,10 +87,17 @@ h2 {
   font-family: Playfair Display;
   font-size: 36px;
 }
-h3{
+h3 {
   font: 14px;
   font-family: Playfair Display;
 }
-.brands {
-  padding: 50px;
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6 {
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }

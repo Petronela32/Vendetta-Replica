@@ -1,7 +1,34 @@
 :host {
-  border-top: 1px solid grey;
   text-align: center;
-  padding: 20px;
-  background-color: rgb(67, 60, 60);
-  color: white;
+  padding: 0px;
+  background-color: black;
+  color: grey;
+}
+#insta {
+  margin-left: 10px;
+}
+#twitter {
+  margin: 10px;
+  margin-bottom: 0;
+}
+.upper-side {
+  display: flex;
+  align-items: stretch;
+  margin: 40px;
+  padding-top: 0px;
+  border-bottom: 1px solid grey;
+}
+.upper-side a {
+  text-decoration: none;
+  color: grey;
+}
+.upper-side ul {
+  list-style: none;
+  padding-left: 0;
+}
+.search,
+.services,
+.contact,
+.menu {
+  width: 250px;
 }

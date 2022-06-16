@@ -10,7 +10,9 @@ export class HomeComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.showSlides(3);
+  }
 
   plusSlides(n): void {
     this.showSlides((this.slideIndex += n));

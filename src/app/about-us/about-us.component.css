@@ -1,4 +1,10 @@
-.images {
+/* .images {
     display: flex;
     flex-wrap: wrap-reverse;
+} */
+.first-container,
+.second-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }

@@ -14,7 +14,7 @@ export class AboutUsComponent implements OnInit {
   constructor(private route: Router) {}
 
   ngOnInit(): void {}
-  
+
   btnClick(): void {
     this.click.emit('TEST');
   }

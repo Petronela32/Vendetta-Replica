@@ -1,0 +1,20 @@
+#container {
+  border-top: solid 1px black;
+  text-align: center;
+  background: aquamarine;
+}
+#date {
+  margin-left: -1px;
+}
+#phone {
+  margin-left: 4px;
+}
+#hour {
+  margin-left: -3px;
+}
+#service {
+  margin-right: -11px;
+}
+.button-app {
+  margin-left: 30px;
+}

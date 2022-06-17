@@ -1,8 +1,5 @@
-/* * {
-  box-sizing: border-box;
-} */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 700px;
   position: relative;
   margin: auto;
 }
@@ -10,23 +7,20 @@
 .next {
   cursor: pointer;
   position: absolute;
+  content: "";
   top: 50%;
   width: auto;
-  margin-top: -22px;
   padding: 10px;
   color: white;
-  font-weight: bold;
-  font-size: 18px;
   transition: 0.6s ease;
   border-radius: 70%;
-  user-select: none;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .next {
   right: 0;
 }
-.prev,
-.next {
-  background-color: rgba(0, 0, 0, 0.8);
+.prev {
+  left: 0;
 }
 .dot {
   cursor: pointer;
@@ -62,18 +56,20 @@ img {
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
+  width: 50%;
 }
 .titles {
   text-align: center;
 }
 .products {
-  padding: 80px;
-  margin-left: 100px;
+  /* padding: 80px;
+  margin-left: 100px; */
+  width: 100%;
 }
 #products {
-  padding: 50px;
-  margin-left: 100px;
+  /* padding: 50px;
+  margin-left: 100px; */
+  width: 100%;
 }
 h2 {
   font-family: Playfair Display;
@@ -93,11 +89,15 @@ h3 {
   margin-top: 20px;
   margin-bottom: 10px;
 }
-/* @media only screen and (min-width: 600px) {
+body {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
-@media only screen and (min-width: 768px) {
+* {
+  text-align: center;
 }
-@media only screen and (min-width: 992px) {
+#logo-bottom {
+  cursor: pointer;
 }
-@media only screen and (min-width: 1200px) {
-} */

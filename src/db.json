@@ -1,0 +1,66 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Angelina",
+      "lastName": "Jolie",
+      "phone": "0000000000"
+    },
+    {
+      "id": 2,
+      "firstName": "Petronela",
+      "lastName": "Lazarec",
+      "phone": "0000000000"
+    },
+    {
+      "id": 3,
+      "firstName": "Jason",
+      "lastName": "Momoa",
+      "phone": "0000000000"
+    },
+    {
+      "id": 4,
+      "firstName": "Leonardo",
+      "lastName": "Dicaprio",
+      "phone": "0000000000"
+    },
+    {
+      "id": 5,
+      "firstName": "Tom",
+      "lastName": "Hardy",
+      "phone": "0000000000"
+    },
+    {
+      "firstName": "Petronela",
+      "lastName": "Lazarec",
+      "service": "spalat",
+      "date": "2022-06-19T20:00",
+      "phone": "0000000000",
+      "id": 6
+    },
+    {
+      "firstName": "Petronela",
+      "lastName": "Lazarec",
+      "service": "spalat",
+      "date": "2022-06-19T20:00",
+      "phone": "0000000000",
+      "id": 7
+    },
+    {
+      "firstName": "Petronela",
+      "lastName": "Lazarec",
+      "service": "spalat",
+      "date": "2022-06-19T20:00",
+      "phone": "0000000000",
+      "id": 8
+    },
+    {
+      "firstName": "Petronela",
+      "lastName": "Lazarec",
+      "service": "spalat",
+      "date": "2022-06-19T20:00",
+      "phone": "0000000000",
+      "id": 9
+    }
+  ]
+}

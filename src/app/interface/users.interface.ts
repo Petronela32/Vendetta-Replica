@@ -3,6 +3,5 @@ export interface IUser {
   lastName: string;
   service: string;
   date: string;
-  hour: string;
   phone: string;
 }

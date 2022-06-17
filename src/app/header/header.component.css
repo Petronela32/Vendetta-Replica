@@ -2,12 +2,13 @@
 
 :host {
   display: flex;
-  gap: 250px;
+  gap: 50px;
   background-color: white;
   position: -webkit-sticky;
   position: fixed;
   z-index: 1;
   margin-left: 50px;
+  width: 100%;
 }
 
 #home-button {

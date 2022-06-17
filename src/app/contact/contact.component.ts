@@ -1,5 +1,7 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { importType } from '@angular/compiler/src/output/output_ast';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { take } from 'rxjs';
 import { IUser } from '../interface/users.interface';
 import { ConnectionService } from '../services/connection.service';
 
@@ -9,20 +11,42 @@ import { ConnectionService } from '../services/connection.service';
   styleUrls: ['./contact.component.css'],
 })
 export class ContactComponent implements OnInit {
+  isDone: boolean = false;
+
   userData: IUser = {
     firstName: '',
     lastName: '',
     service: '',
     date: '',
-    hour: '',
     phone: '',
   };
   constructor(
-    private route: Router,
+    private router: Router,
     private connectionService: ConnectionService
   ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.isDone = false;
+  }
 
-  addAppointment(): void {}
+  addAppointment(): void {
+    this.connectionService
+      .addAppointment(this.userData)
+      .pipe(take(1))
+      .subscribe(
+        (data) => {
+          this.isDone = true;
+
+          setTimeout(() => {
+            this.isDone = false;
+          }, 3000);
+        },
+        (err) => {
+          this.isDone = false;
+        }
+      );
+  }
+  // test(): void {
+  //   this.isDone = !this.isDone;
+  // }
 }

@@ -1,4 +1,5 @@
 :host {
+  display: block;
   text-align: center;
   padding: 0px;
   background-color: black;
@@ -14,10 +15,9 @@
 }
 .upper-side {
   display: flex;
-  align-items: stretch;
-  margin: 40px;
-  padding-top: 0px;
+  justify-content: space-evenly;
   border-bottom: 1px solid grey;
+  padding: 20px;
 }
 .upper-side a {
   text-decoration: none;
@@ -32,4 +32,12 @@
 .contact,
 .menu {
   width: 250px;
+}
+.site-footer {
+  background-image: url(https://hairsalon.thememove.com/data/images/footer_bg.png);
+}
+@media screen and (max-width: 61.9375rem) {
+  .site-footer {
+    background-image: none !important;
+  }
 }

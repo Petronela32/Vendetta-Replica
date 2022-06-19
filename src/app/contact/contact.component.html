@@ -9,6 +9,7 @@
       >
         <p>Programare efectuata cu succes!</p>
       </div>
+
       <div id="service">
         <label for="selectService">Service: </label>
         <select
@@ -45,7 +46,6 @@
           type="text"
           name="fName"
           id="fName"
-          placeholder="First Name"
         />
       </div>
 
@@ -57,7 +57,6 @@
           type="text"
           name="lName"
           id="lName"
-          placeholder="Last Name"
         />
       </div>
 
@@ -69,12 +68,47 @@
           type="text"
           name="phone"
           id="phone"
-          placeholder="Phone Number"
         />
       </div>
       <div class="button-app">
         <button (click)="addAppointment()">Add appointment</button>
       </div>
     </form>
+    <div class="cancel">
+      <h4>Cancel appointment here:</h4>
+      <div>
+        <label for="fName"> First Name:</label>
+        <input
+          class="input"
+          [(ngModel)]="userData.firstName"
+          type="text"
+          name="fName"
+          id="fName"
+        />
+      </div>
+      <div>
+        <label for="lName"> Last Name:</label>
+        <input
+          class="input"
+          [(ngModel)]="userData.lastName"
+          type="text"
+          name="lName"
+          id="lName"
+        />
+      </div>
+      <div>
+        <label for="phone"> Phone Nr: </label>
+        <input
+          class="input"
+          [(ngModel)]="userData.phone"
+          type="text"
+          name="phone"
+          id="phone"
+        />
+      </div>
+      <div class="btn-app">
+        <button (click)="cancelAppointment()">Cancel appointment</button>
+      </div>
+    </div>
   </div>
 </div>

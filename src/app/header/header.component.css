@@ -7,7 +7,6 @@
   position: -webkit-sticky;
   position: fixed;
   z-index: 1;
-  margin-left: 50px;
   width: 100%;
 }
 
@@ -19,4 +18,5 @@
 }
 img {
   cursor: pointer;
+  margin-left: 60px;
 }

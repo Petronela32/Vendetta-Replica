@@ -1,44 +1,48 @@
 #container {
-  border-top: solid 1px black;
+  background: rgb(188, 185, 194) url(../../assets/pictures/23.jpg) no-repeat;
+  background-position: center;
   text-align: center;
+  font-family: fantasy;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
 }
 #date {
   padding: 0;
-  margin-left: 6px;
+  margin-left: 3px;
 }
 #phone {
-  margin-left: 4px;
-}
-#hour {
-  margin-left: -3px;
+  margin-left: 3px;
 }
 #service {
-  margin-right: 5px;
+  margin-right: 7px;
 }
 .button-app {
-  margin-left: 30px;
+  margin-left: 60px;
 }
 .input {
   font-size: 1rem;
   padding: 3px 5px;
   margin-bottom: 5px;
 }
-
 .form-container {
   position: relative;
 }
 .pop-up-appointment {
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
-  right: 0;
+  left: 0;
   padding: 15px 10px;
-  background: red;
-  color: white;
+  background: bisque;
+  color: black;
   opacity: 0;
-  transition: all 1.5s;
+  transition: all 2s;
   border-radius: 12px;
 }
 .pop-up-active {
-  opacity: 1;
+  opacity: 0.6;
+}
+.btn-app {
+  margin-left: 60px;
 }

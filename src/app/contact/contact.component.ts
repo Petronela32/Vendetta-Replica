@@ -46,7 +46,10 @@ export class ContactComponent implements OnInit {
         }
       );
   }
-  // test(): void {
-  //   this.isDone = !this.isDone;
-  // }
+
+  cancelAppointment(): void {
+    const result = confirm(
+      `Are you sure you want to cancel appointment: ${this.userData.firstName} ${this.userData.lastName}?`
+    );
+  }
 }

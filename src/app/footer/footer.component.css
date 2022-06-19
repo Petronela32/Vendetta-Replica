@@ -41,3 +41,15 @@
     background-image: none !important;
   }
 }
+a {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: large;
+}
+ul {
+  text-align-last: left;
+  margin-top: 10px;
+  margin-left: 80px;
+}
+/* img-contact {
+  
+} */

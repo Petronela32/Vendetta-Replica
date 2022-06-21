@@ -12,4 +12,8 @@ export class ConnectionService {
   addAppointment(userData: IUser): Observable<IUser[]> {
     return this.http.post<IUser[]>('http://localhost:3000/users', userData);
   }
+
+  cancelAppointment(userData: IUser): Observable<IUser[]> {
+    return this.http.post<IUser[]>('http://localhost:3000/users', userData);
+  }
 }

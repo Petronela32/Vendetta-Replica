@@ -46,3 +46,8 @@
 .btn-app {
   margin-left: 60px;
 }
+.error-message-on {
+  color: red;
+  font-size: 16px;
+  font-style: oblique;
+}

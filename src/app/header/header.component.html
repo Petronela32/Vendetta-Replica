@@ -1,15 +1,23 @@
-<img
-  src="../../assets/pictures/VendettaReplicaLogo.jpg"
-  alt="logo"
-  [width]="140"
-/>
+<div id="nav-bar">
+  <img
+    src="../../assets/pictures/VendettaReplicaLogo.jpg"
+    alt="logo"
+    [width]="140"
+  />
 
-<div class="header-buttons">
-  <button mat-button routerLink="/home">HOME</button>
-  <button mat-button routerLink="/about-us">ABOUT</button>
-  <button mat-button routerLink="/contact">CONTACT</button>
-  <input id="input-search" type="Search" placeholder="Search Service" />
-  <button mat-icon-button (click)="searchCut()">
-    <mat-icon>search</mat-icon>
-  </button>
+  <div class="header-buttons">
+    <button mat-button routerLink="/home">HOME</button>
+    <button mat-button routerLink="/about-us">ABOUT</button>
+    <button mat-button routerLink="/contact">CONTACT</button>
+    <input
+      id="input-search"
+      type="Search"
+      (change)="searchChange($event)"
+      (keypress)="onSearchInput($event)"
+      placeholder="Search Service"
+    />
+    <button mat-icon-button (click)="searchCut()">
+      <mat-icon>search</mat-icon>
+    </button>
+  </div>
 </div>

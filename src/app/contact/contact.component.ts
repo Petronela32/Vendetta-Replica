@@ -1,4 +1,5 @@
 import { importType } from '@angular/compiler/src/output/output_ast';
+import { ValueConverter } from '@angular/compiler/src/render3/view/template';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { take } from 'rxjs';
@@ -13,13 +14,19 @@ import { ConnectionService } from '../services/connection.service';
 export class ContactComponent implements OnInit {
   isDone: boolean = false;
 
+  errorMessage: string = '';
+
   userData: IUser = {
     firstName: '',
     lastName: '',
+    firstNameCancel: '',
+    lastNameCancel: '',
+    phoneCancel: '',
     service: '',
     date: '',
     phone: '',
   };
+
   constructor(
     private router: Router,
     private connectionService: ConnectionService
@@ -30,6 +37,19 @@ export class ContactComponent implements OnInit {
   }
 
   addAppointment(): void {
+    if (
+      !this.userData.firstName.trim() ||
+      !this.userData.lastName.trim() ||
+      !this.userData.service ||
+      !this.userData.date ||
+      !this.userData.phone
+    ) {
+      this.errorMessage = 'Completati toate campurile';
+      return;
+    } else {
+      this.errorMessage = '';
+    }
+
     this.connectionService
       .addAppointment(this.userData)
       .pipe(take(1))
@@ -48,8 +68,29 @@ export class ContactComponent implements OnInit {
   }
 
   cancelAppointment(): void {
+    if (
+      !this.userData.firstNameCancel.trim() ||
+      !this.userData.lastNameCancel.trim() ||
+      !this.userData.phoneCancel
+    ) {
+      this.errorMessage = 'Completati toate campurile!';
+      return;
+    } else {
+      this.errorMessage = '';
+    }
     const result = confirm(
-      `Are you sure you want to cancel appointment: ${this.userData.firstName} ${this.userData.lastName}?`
+      `Are you sure you want to cancel appointment: ${this.userData.firstName} ${this.userData.lastName} ${this.userData.phone}?`
     );
+    this.connectionService
+      .cancelAppointment(this.userData)
+      .pipe(take(1))
+      .subscribe(
+        (data) => {
+          this.isDone;
+        },
+        (err) => {
+          this.isDone = false;
+        }
+      );
   }
 }

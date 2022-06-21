@@ -1,52 +1,6 @@
 {
   "users": [
     {
-      "id": 1,
-      "firstName": "Angelina",
-      "lastName": "Jolie",
-      "phone": "0000000000"
-    },
-    {
-      "id": 2,
-      "firstName": "Petronela",
-      "lastName": "Lazarec",
-      "phone": "0000000000"
-    },
-    {
-      "id": 3,
-      "firstName": "Jason",
-      "lastName": "Momoa",
-      "phone": "0000000000"
-    },
-    {
-      "id": 4,
-      "firstName": "Leonardo",
-      "lastName": "Dicaprio",
-      "phone": "0000000000"
-    },
-    {
-      "id": 5,
-      "firstName": "Tom",
-      "lastName": "Hardy",
-      "phone": "0000000000"
-    },
-    {
-      "firstName": "Petronela",
-      "lastName": "Lazarec",
-      "service": "aranjat-par",
-      "date": "2022-06-20T17:00",
-      "phone": "0000000000",
-      "id": 6
-    },
-    {
-      "firstName": "Petronela",
-      "lastName": "Lazarec",
-      "service": "aranjat-par",
-      "date": "2022-06-20T17:00",
-      "phone": "0000000000",
-      "id": 7
-    },
-    {
       "firstName": "Andreea",
       "lastName": "Maria",
       "service": "tuns-femei",
@@ -87,52 +41,169 @@
       "id": 12
     },
     {
-      "firstName": "",
+      "firstName": "Petronela",
       "lastName": "",
+      "firstNameCancel": "",
+      "lastNameCancel": "",
+      "phoneCancel": "",
       "service": "",
       "date": "",
       "phone": "",
-      "id": 13
+      "id": 20
+    },
+    {
+      "firstName": "Petronela",
+      "lastName": "",
+      "firstNameCancel": "Petronela",
+      "lastNameCancel": "",
+      "phoneCancel": "",
+      "service": "",
+      "date": "",
+      "phone": "",
+      "id": 21
+    },
+    {
+      "firstName": "Petro",
+      "lastName": "Petro",
+      "firstNameCancel": "",
+      "lastNameCancel": "",
+      "phoneCancel": "",
+      "service": "",
+      "date": "",
+      "phone": "0000000000",
+      "id": 22
+    },
+    {
+      "firstName": "Petro",
+      "lastName": "Petro",
+      "firstNameCancel": "",
+      "lastNameCancel": "",
+      "phoneCancel": "",
+      "service": "",
+      "date": "",
+      "phone": "0000000000",
+      "id": 23
+    },
+    {
+      "firstName": "Ana",
+      "lastName": "Ana",
+      "firstNameCancel": "",
+      "lastNameCancel": "",
+      "phoneCancel": "",
+      "service": "",
+      "date": "",
+      "phone": "",
+      "id": 24
+    },
+    {
+      "firstName": "Ana",
+      "lastName": "Ana",
+      "firstNameCancel": "",
+      "lastNameCancel": "",
+      "phoneCancel": "",
+      "service": "",
+      "date": "",
+      "phone": "",
+      "id": 25
+    },
+    {
+      "firstName": "Ana",
+      "lastName": "Ana",
+      "firstNameCancel": "",
+      "lastNameCancel": "",
+      "phoneCancel": "",
+      "service": "",
+      "date": "",
+      "phone": "",
+      "id": 26
+    },
+    {
+      "firstName": "Ana",
+      "lastName": "Ana",
+      "firstNameCancel": "",
+      "lastNameCancel": "",
+      "phoneCancel": "",
+      "service": "",
+      "date": "",
+      "phone": "",
+      "id": 27
     },
     {
       "firstName": "",
       "lastName": "",
+      "firstNameCancel": "Petronela",
+      "lastNameCancel": "Ana",
+      "phoneCancel": "0000000000",
       "service": "",
       "date": "",
       "phone": "",
-      "id": 14
+      "id": 28
     },
     {
       "firstName": "",
       "lastName": "",
+      "firstNameCancel": "Petronela",
+      "lastNameCancel": "Ana",
+      "phoneCancel": "",
       "service": "",
       "date": "",
       "phone": "",
-      "id": 15
+      "id": 29
     },
     {
       "firstName": "",
       "lastName": "",
+      "firstNameCancel": "Petronela",
+      "lastNameCancel": "Ana",
+      "phoneCancel": "",
       "service": "",
       "date": "",
       "phone": "",
-      "id": 16
+      "id": 30
     },
     {
       "firstName": "",
       "lastName": "",
+      "firstNameCancel": "Petronela",
+      "lastNameCancel": "Ana",
+      "phoneCancel": "",
       "service": "",
       "date": "",
       "phone": "",
-      "id": 17
+      "id": 31
     },
     {
       "firstName": "",
       "lastName": "",
+      "firstNameCancel": "jhgf",
+      "lastNameCancel": "jhgf",
+      "phoneCancel": "00000000",
       "service": "",
       "date": "",
       "phone": "",
-      "id": 18
+      "id": 32
+    },
+    {
+      "firstName": "Ana",
+      "lastName": "A",
+      "firstNameCancel": "",
+      "lastNameCancel": "",
+      "phoneCancel": "",
+      "service": "spalat",
+      "date": "2022-06-23T23:10",
+      "phone": "0000000000",
+      "id": 33
+    },
+    {
+      "firstName": "Ana",
+      "lastName": "A",
+      "firstNameCancel": "Ana",
+      "lastNameCancel": "A",
+      "phoneCancel": "0000000000",
+      "service": "spalat",
+      "date": "2022-06-23T23:10",
+      "phone": "0000000000",
+      "id": 34
     }
   ]
 }

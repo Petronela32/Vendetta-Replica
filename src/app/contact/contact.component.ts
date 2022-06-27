@@ -1,7 +1,6 @@
 import { importType } from '@angular/compiler/src/output/output_ast';
 import { ValueConverter } from '@angular/compiler/src/render3/view/template';
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import { take } from 'rxjs';
 import { IUser } from '../interface/users.interface';
 import { ConnectionService } from '../services/connection.service';
@@ -27,10 +26,7 @@ export class ContactComponent implements OnInit {
     phone: '',
   };
 
-  constructor(
-    private router: Router,
-    private connectionService: ConnectionService
-  ) {}
+  constructor(private connectionService: ConnectionService) {}
 
   ngOnInit(): void {
     this.isDone = false;

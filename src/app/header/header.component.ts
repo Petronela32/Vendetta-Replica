@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +8,7 @@ import { Router } from '@angular/router';
 export class HeaderComponent implements OnInit {
   searchValue: string = '';
 
-  constructor(private router: Router) {}
+  constructor() {}
 
   ngOnInit(): void {
     const navBar = document.getElementById('nav-bar');
@@ -17,8 +16,6 @@ export class HeaderComponent implements OnInit {
     const navBarPosition = navBar.offsetTop;
 
     window.addEventListener('scroll', () => {
-      // console.log(window.scrollY);
-      console.log(navBarPosition);
       if (window.scrollY > navBarPosition) {
         navBar.classList.add('active');
       } else {
@@ -32,9 +29,9 @@ export class HeaderComponent implements OnInit {
   }
 
   searchCut(): void {
-    // this.router.navigate(['/search', this.searchValue]);
     window.open(`https://www.vendettasaloon.ro/preturi/`);
   }
+
   onSearchInput(ev: KeyboardEvent): void {
     if (ev.key === 'Enter') {
       this.searchCut();

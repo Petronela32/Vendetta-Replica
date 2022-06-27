@@ -1,6 +1,6 @@
 <div id="container">
   <div>
-    <h4>Make an appointment here :</h4>
+    <h4 id="contact-title">Make an appointment here :</h4>
     <form class="form-container">
       <div
         [ngClass]="
@@ -10,7 +10,7 @@
         <p>Programare efectuata cu succes!</p>
       </div>
 
-      <div *ngIf="errorMessage" class="error-message-on">
+      <div *ngIf="errorMessage" class="error-message-on" id="error">
         <p>{{ errorMessage }}</p>
       </div>
 

@@ -1,5 +1,6 @@
 #container {
-  background: rgb(188, 185, 194) url(../../assets/pictures/23.jpg) no-repeat;
+  background: url(../../assets/pictures/23.jpg) no-repeat;
+  background-size: cover;
   background-position: center;
   text-align: center;
   font-family: fantasy;
